@@ -14,4 +14,6 @@ RUN python setup.py install
 WORKDIR /
 RUN rm -r /tmp/gitinspector
 
-WORKDIR /opt/repo
+WORKDIR /repo
+
+ENTRYPOINT ["gitinspector"]

@@ -4,6 +4,6 @@ services:
   gitinspector:
     build: .
     command: gitinspector --grading
-    image: gitinspector:0.4.4
+    image: felix/gitinspector:0.4.4
     volumes:
-      - .:/opt/repo
+      - .:/repo

@@ -33,7 +33,15 @@ Below are some example outputs for a number of famous open source projects. All 
 | Pango | [HTML](http://githubproxy.ejwa.se/wiki/ejwa/gitinspector/examples/pango_output.html) | [HTML Embedded](http://githubproxy.ejwa.se/wiki/ejwa/gitinspector/examples/pango_output.emb.html) | [Plain Text](http://githubproxy.ejwa.se/wiki/ejwa/gitinspector/examples/pango_output.txt) | [XML](http://githubproxy.ejwa.se/wiki/ejwa/gitinspector/examples/pango_output.xml) |
 
 ### Docker
-Build the Docker image and run gitinspector for this repository (tested with Docker 17.12.0 and docker-compose 1.17.0):
+The following was tested with Docker 17.12.0 and docker-compose 1.17.0.
+
+Save HTML report to `foo.html`:
+```
+repo=/path/to-some/repo
+docker run --rm -v $repo:/repo felix/gitinspector:0.4.4 --format=html --grading > foo.html
+```
+
+Build the Docker image and run gitinspector for this repository (useful to test the Docker build):
 ```
 docker-compose run --rm gitinspector
 ```
