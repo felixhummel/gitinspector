@@ -32,6 +32,12 @@ Below are some example outputs for a number of famous open source projects. All 
 | JQuery | [HTML](http://githubproxy.ejwa.se/wiki/ejwa/gitinspector/examples/jquery_output.html) | [HTML Embedded](http://githubproxy.ejwa.se/wiki/ejwa/gitinspector/examples/jquery_output.emb.html) | [Plain Text](http://githubproxy.ejwa.se/wiki/ejwa/gitinspector/examples/jquery_output.txt) | [XML](http://githubproxy.ejwa.se/wiki/ejwa/gitinspector/examples/jquery_output.xml) |
 | Pango | [HTML](http://githubproxy.ejwa.se/wiki/ejwa/gitinspector/examples/pango_output.html) | [HTML Embedded](http://githubproxy.ejwa.se/wiki/ejwa/gitinspector/examples/pango_output.emb.html) | [Plain Text](http://githubproxy.ejwa.se/wiki/ejwa/gitinspector/examples/pango_output.txt) | [XML](http://githubproxy.ejwa.se/wiki/ejwa/gitinspector/examples/pango_output.xml) |
 
+### Docker
+Build the Docker image and run gitinspector for this repository (tested with Docker 17.12.0 and docker-compose 1.17.0):
+```
+docker-compose run --rm gitinspector
+```
+
 ### The Team
   * Adam Waldenberg, Lead maintainer and Swedish translation
   * Agustín Cañas, Spanish translation

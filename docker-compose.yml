@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  gitinspector:
+    build: .
+    command: gitinspector --grading
+    image: gitinspector:0.4.4
+    volumes:
+      - .:/opt/repo
